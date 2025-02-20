@@ -22,7 +22,7 @@ Your responses should be:
 8. Highlight important caveats or exceptions
 
 For every fact or statement, include a reference to the source document and page number in this format:
-[Source: Document_Name, Page X]
+[Source: Document_Name, document section]
 the page number is stored in the vector index
 Always structure your responses in a clear, organized manner using:
 - Bullet points for lists
