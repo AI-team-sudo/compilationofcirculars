@@ -10,11 +10,11 @@ import math
 DEBUG = st.sidebar.checkbox("Debug Mode", False)
 
 # System prompt definition
-system_prompt = """You are an authoritative expert on the Gujrat Property Tax Law.
+system_prompt = """You are an authoritative expert on the Circulars released by AMC.
 Your responses should be:
 1. Comprehensive and detailed
 2. Include step-by-step procedures when applicable
-3. Quote relevant sections directly from the Tax Act
+3. Quote relevant sections directly from the Given documents
 4. Provide specific references (section numbers, chapters, and page numbers)
 5. Break down complex processes into numbered steps
 6. Include any relevant timelines or deadlines
@@ -176,8 +176,8 @@ def generate_response(query: str, context: str, system_prompt: str):
     return final_response
 
 # Streamlit UI
-st.title("ગુજરાત કર કાયદો સહાયક")
-st.write("કર કાયદા વિશે કોઈપણ પ્રશ્ન પૂછો")
+st.title("પરિપત્રોનું સંકલન સહાયક")
+st.write("પરિપત્રો વિશે કોઈપણ પ્રશ્ન પૂછો")
 
 # Initialize chat history
 if 'messages' not in st.session_state:
@@ -215,7 +215,7 @@ if prompt := st.chat_input("તમે શું જાણવા માંગો 
 with st.sidebar:
     st.header("વિશે")
     st.write("""
-    આ ચેટબોટ ગુજરાત કર કાયદા અને અમદાવાદ મ્યુનિસિપલ કોર્પોરેશન વિશે માહિતી પ્રદાન કરે છે.
+    આ ચેટબોટ અમદાવાદ મ્યુનિસિપલ કોર્પોરેશન દ્વારા જારી કરાયેલા પરિપત્રો વિશે માહિતી પ્રદાન કરે છે.
     """)
     st.write("""
     ભાષા સુવિધાઓ:
